@@ -1,0 +1,115 @@
+/* Sidebar Base */
+#sidebar-menu-v2 .sidebar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    border-right: 1px solid #ddd;
+}
+
+/* Sidebar Items */
+#sidebar-menu-v2 .sidebar-menu > li {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main Link Style */
+#sidebar-menu-v2 .sidebar-menu > li > a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 15px;
+    font-size: 16px;
+    color: #294661;
+    text-decoration: none;
+    border-left: 3px solid transparent;
+    transition: all 0.3s ease;
+}
+
+/* Icon Styling */
+#sidebar-menu-v2 .sidebar-menu > li > a > .fa {
+    font-size: 18px;
+    margin: 0;
+    width: 20px;
+}
+
+/* Hover + Active States */
+#sidebar-menu-v2 .sidebar-menu > li:hover > a,
+#sidebar-menu-v2 .sidebar-menu > li.active > a {
+    color: #00050f;
+    background-color: #f5f8ff;
+    border-left-color: #0065ff;
+}
+
+/* Submenu Container */
+#sidebar-menu-v2 .sidebar-menu > li > .treeview-menu {
+    list-style: none;
+    padding-left: 20px;
+    display: none;
+    background-color: #fefefe;
+}
+
+/* Submenu Item */
+#sidebar-menu-v2 .sidebar-menu .treeview-menu > li > a {
+    padding: 10px 15px;
+    display: block;
+    font-size: 14px;
+    color: #294661;
+    transition: all 0.2s;
+}
+
+/* Submenu Icon Alignment */
+#sidebar-menu-v2 .sidebar-menu .treeview-menu > li > a > .fa {
+    font-size: 16px;
+    width: 18px;
+    margin-right: 10px;
+}
+
+/* Submenu Hover */
+#sidebar-menu-v2 .sidebar-menu .treeview-menu > li.active > a,
+#sidebar-menu-v2 .sidebar-menu .treeview-menu > li > a:hover {
+    color: #001429;
+    background-color: #f0f4ff;
+}
+
+/* Rotating arrow */
+#sidebar-menu-v2 .sidebar-menu li > a > .fa-angle-left {
+    margin-left: auto;
+    transition: transform 0.3s;
+}
+
+#sidebar-menu-v2 .sidebar-menu li.active > a > .fa-angle-left {
+    transform: rotate(-90deg);
+}
+
+/* Active submenu shows */
+#sidebar-menu-v2 .sidebar-menu li.active > .treeview-menu {
+    display: block;
+}
+
+/* Header Item */
+#sidebar-menu-v2 .sidebar-menu li.header {
+    padding: 10px 20px;
+    font-size: 13px;
+    font-weight: bold;
+    color: #294661;
+    background-color: #ffffff;
+}
+
+/* Hide scrollbar in .rows */
+#sidebar-menu-v2 .body.rows {
+    top: 60px;
+    -ms-overflow-style: none;
+}
+
+#sidebar-menu-v2 .body.rows::-webkit-scrollbar {
+    display: none;
+}
+
+/* Responsive Fix for Mobile */
+@media (max-width: 767px) {
+    #sidebar-menu-v2 {
+        margin-top: 50px;
+    }
+}
