@@ -8,6 +8,7 @@ def get_sql_connection():
   global __cnx
 
   if __cnx is None:
-    __cnx = pymysql.connect(user='root', password='Minon#616747', database='gs')
+    __cnx = pymysql.connect(user='root', password='root', database='gs')
 
   return __cnx
+#Password set default // change to required when running.
